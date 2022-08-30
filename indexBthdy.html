@@ -1,5 +1,6 @@
 <html>
 <head>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -62,22 +63,29 @@
 <div class="cake"></div>
 <div class="plate"></div>
 
-<!-- <iframe src="testaudio.mp3" allow="autoplay" id="audio" style="display: none"></iframe>-->
+ <div id='audio'>
+
+</div>
+
+<div id="audio1">
+  
+</div>
+<script type='text/javascript'>
+            $(document).ready(function (){
+                $("#audio").stop("true").delay('2000').queue(function() { 
+                    $(this).html('<audio src="testaudio2.mp3" autoplay ="true" preload="auto" loop="true" /></audio>');
+                });
+            });
 
 
-<audio src="testaudio.mp3" autoplay ="true" preload="auto"/>
+             $(document).ready(function (){
+                $("#audio1").stop("true").delay('5000').queue(function() { 
+                    $(this).html('<audio src="testaudio1.mp3" autoplay ="true" preload="auto" loop="true" /></audio>');
+                });
+            });
+
+
+        </script>
       
-
-    <!-- <video width="120" height="100" controls autoplay id="video">
-      <source src="https://www.youtube.com/watch?v=8pn7CPRmS-g&ab_channel=OSRDigital">
-    <!--   <source src="movie.ogg" type="video/ogg"> -
-    </video> -->
-
-    <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
-</iframe>
-
-    <iframe width="420" height="315" src="https://www.youtube.com/watch?v=8pn7CPRmS-g&ab_channel=OSRDigital" allow="autoplay" id="audio" style="display: none"></iframe>
-
-
 </body>
 </html>
