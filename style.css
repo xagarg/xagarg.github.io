@@ -351,3 +351,14 @@ video{
 }
 
 audio { display:none;}
+
+
+img{
+  width:50%;
+  height:100%;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  display: block;
+}
